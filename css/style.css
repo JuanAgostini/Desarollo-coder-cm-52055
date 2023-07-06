@@ -1,0 +1,436 @@
+/* FUENTE GEOLOGICA DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Ysabeau+SC&display=swap');
+/* font-family: 'Geologica', sans-serif;
+   font-family: 'Ysabeau SC', sans-serif; */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+html {
+    font-size: 62, 5%;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* END RESET */
+
+body {
+    background-color: #e6f8f6;
+}
+
+.gridcontainer {
+    display: grid;
+    width: 50rem;
+    height: 30rem;
+    margin: auto;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* GENERAL HEADER START */
+.bg-nav {
+    background: rgb(99, 255, 245);
+    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgba(255, 255, 255, 1) 100%);
+}
+
+.img-logo {
+    width: 6rem;
+}
+
+.li-edit:hover {
+    color: rgb(246, 45, 45);
+}
+
+.dw-colors {
+    background-color: rgb(255, 90, 90);
+    text-decoration: underline;
+}
+
+.dw-colors:hover {
+    background-color: rgba(249, 3, 3, 0.4);
+}
+
+.sb-edit:focus {
+    border: 2px solid rgba(249, 3, 3, 0.3);
+}
+
+/* GENERAL HEADER END */
+/* INDEX MAIN START */
+
+.main__tittle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    background-image: url('../img/bannerojos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70rem;
+    color: white;
+}
+
+.main__tittle:hover {
+    transition: transform 0.7s ease;
+    transform: scale(1.1);
+}
+
+.cr-edit {
+    grid-column: 1/13;
+    grid-row: 2/13;
+}
+
+.cr_text {
+    color: rgb(249, 124, 124);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* INDEX MAIN END */
+/* INDEX SECTION ONE START */
+.flexcontainer__section1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.section1__article {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+
+}
+
+.section1__img {
+    width: 30rem;
+    margin: 10px;
+}
+
+.section1__img:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+}
+
+.section__button {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    letter-spacing: 2px;
+    color: #f76565;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+.section__button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+.section__button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.section__button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #f04c4c;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.section__button:hover {
+    color: #ffffff;
+    border: 1px solid #f04c4c;
+}
+
+.section__button:hover:before {
+    top: -35%;
+    background-color: #f04c4c;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.section__button:hover:after {
+    top: -45%;
+    background-color: #f04c4c;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.section__p {
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #f04c4c;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* INDEX SECTION ONE END */
+
+/* INDEX SECTION TWO START */
+
+.flexcontainer__section2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12rem;
+}
+
+.section2 {
+    margin-top: 3rem;
+}
+
+.section2__article {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+
+}
+
+.section2__img {
+    width: 30rem;
+    margin: 10px;
+}
+
+.section2__img:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+}
+
+/* INDEX SECTION TWO END */
+
+/* INDEX ASIDE START */
+.flexcontainer__aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10rem;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.3rem;
+    background-image: url('../img/banner\ shinobi.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70rem;
+}
+
+.flexcontainer__aside p {
+    color: white;
+    font-weight: bold;
+
+}
+
+.if-edit {
+    padding: 1rem;
+}
+
+/* INDEX ASIDE END */
+
+/* GENERAL FOOTER START */
+
+.footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 30rem;
+    background: rgb(99, 255, 245);
+    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgba(255, 255, 255, 1) 100%);
+}
+
+.footer__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.alert-edit {
+    background-color: rgb(249, 66, 66);
+    color: white;
+    font-weight: bold;
+    margin: 2rem;
+
+}
+
+.footer__backtotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 3rem;
+
+}
+
+.ft-bt-edit {
+    border: none;
+    background-color: rgb(122, 122, 122);
+}
+
+.ft-bt-edit-text {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer__img {
+    width: 8rem;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social__a {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(227, 103, 103);
+}
+
+.footer__social__a:hover {
+    background-color: rgb(227, 174, 174);
+    border-radius: 15px;
+}
+
+.ft-i {
+    color: rgb(227, 103, 103);
+    letter-spacing: 10px;
+}
+
+.footer__copy {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-items: center;
+}
+
+/* GENERAL FOOTER END  */
+
+/* TALLES MAIN START*/
+.main__img {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    margin: 15px 0 15px 0;
+}
+.main__img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+
+}
+
+.st_tb {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.figure_alert {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px 0 15px;
+    font-family: 'Ysabeau SC', sans-serif;
+    ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 40px;
+    background: rgb(255, 35, 35);
+    background: linear-gradient(90deg, rgba(255, 35, 35, 1) 0%, rgba(239, 162, 252, 1) 100%);
+}
+
+.figure__video {
+    display: flex;
+    width: 35rem;
+    height: 25rem;
+    margin: 25px auto 25px auto;
+}
+
+.figure__p {
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #fff;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.figure__p:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.figure__p:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.figure__p:hover::before {
+    filter: blur(20px);
+}
+
+.figure__p:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
