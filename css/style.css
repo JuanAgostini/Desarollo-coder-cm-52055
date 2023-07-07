@@ -71,12 +71,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 10rem;
+    margin: 0 3rem 0 3rem;
     background-image: url('../img/bannerojos.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70rem;
     color: white;
 }
+
+@media screen and (max-width: 992px) {
+    .main__tittle {
+        background-size: 50rem;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .main__tittle {
+        background-image: none;
+        color: #fc7f7f;
+    }
+}
+
 
 .main__tittle:hover {
     transition: transform 0.7s ease;
@@ -85,7 +100,7 @@ body {
 
 .slide {
     margin-top: 10px;
-    padding: ;
+
 }
 
 .slide img {
@@ -100,6 +115,22 @@ body {
 
 /* INDEX MAIN END */
 /* INDEX SECTION ONE START */
+.subtittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 2rem 5rem 2rem;
+    background-color: #00e6f6;
+    border-radius: 40px;
+    background: rgb(99, 255, 245);
+    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgb(210, 244, 249));
+    text-transform: uppercase;
+    color: white;
+}
+
+.subtittle__h2 {
+    padding: 1rem;
+}
 
 .flexcontainer__section1 {
     display: flex;
@@ -293,7 +324,7 @@ body {
 /* GENERAL FOOTER START */
 .ft-bg {
     background: rgb(99, 255, 245);
-    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgba(255, 255, 255, 1));
 }
 
 .ft__a {
@@ -359,10 +390,29 @@ body {
 }
 
 .figure__video {
-    display: flex;
-    width: 35rem;
-    height: 25rem;
-    margin: 25px auto 25px auto;
+    display: inline-flex;
+    width: 100%;
+    margin: 1rem;
+    justify-content: center;
+
+
+}
+
+.figure__video__edit {
+    width: 50rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .figure__video__edit {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .figure__video__edit {
+        width: 22rem;
+    }
 }
 
 .figure__p {
@@ -547,8 +597,14 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px 0 70px 0;
-
 }
+
+@media screen and (max-width: 768px) {
+    .pdd__figure {
+        display: none;
+    }
+}
+
 
 /* POLITICA DE DEVOLUCION FIGURE END */
 
