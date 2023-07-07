@@ -37,7 +37,7 @@ body {
 /* GENERAL HEADER START */
 .bg-nav {
     background: rgb(99, 255, 245);
-    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgb(210, 244, 249) );
+    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgb(210, 244, 249));
 }
 
 .img-logo {
@@ -83,15 +83,16 @@ body {
     transform: scale(1.1);
 }
 
-.slide{
+.slide {
     margin-top: 10px;
-    padding:;
+    padding: ;
 }
-.slide img{
-    height: 65vh;
-}    
 
-.cr_bt{
+.slide img {
+    height: 65vh;
+}
+
+.cr_bt {
     color: rgb(249, 124, 124);
     font-weight: bold;
 }
@@ -251,13 +252,36 @@ body {
     background-image: url('../img/banner\ shinobi.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70rem;
+    background-size: 50rem;
+}
+
+@media screen and (max-width: 768px) {
+    .flexcontainer__aside {
+        background-size: 50rem;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .flexcontainer__aside {
+        background-image: none;
+    }
 }
 
 .flexcontainer__aside p {
     color: white;
     font-weight: bold;
+}
 
+@media screen and (max-width: 689px) {
+    .flexcontainer__aside p {
+        color: #f74848;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .flexcontainer__aside p:hover {
+        background-color: rgb(251, 186, 186);
+    }
 }
 
 .if-edit {
@@ -267,19 +291,22 @@ body {
 /* INDEX ASIDE END */
 
 /* GENERAL FOOTER START */
-.ft-bg{
+.ft-bg {
     background: rgb(99, 255, 245);
     background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgba(255, 255, 255, 1) 100%);
 }
-.ft__a{
+
+.ft__a {
     text-decoration: none;
     font-size: 1rem;
     color: black;
 }
-.ft__a:hover{
+
+.ft__a:hover {
     color: rgb(249, 81, 81);
 }
-.ft__p{
+
+.ft__p {
     font-size: 1rem;
 }
 
@@ -607,11 +634,11 @@ body {
 /* CONTACTO MAIN END */
 
 /* UBICACION MAIN START */
-.ub__main{
+.ub__main {
     margin: 50px 30px 50px 30px;
 }
 
-.ub__main__h2{
+.ub__main__h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -620,6 +647,7 @@ body {
     margin-bottom: 30px;
 
 }
+
 #ub__main__map {
     background-color: #70c3be;
     letter-spacing: 2px;
