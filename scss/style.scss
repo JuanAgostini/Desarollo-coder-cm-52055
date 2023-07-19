@@ -1,0 +1,21 @@
+//import utilities
+
+@import "./utilities/variables";
+@import "./utilities/colors";
+@import "./utilities/mixins";
+
+//import fonts
+@import "./globals/fonts";
+
+//import globals
+
+@import "./globals/reset";
+
+//import views
+
+@import "./views/home";
+@import "./views/contacto";
+@import "./views/politicadedevolucion";
+@import "./views/talles";
+@import "./views/ubicacion"
+
