@@ -7,9 +7,13 @@
         text-transform: uppercase;
         color: rgb(249, 81, 81);
         margin-bottom: 30px;
+        .ubi_icon{
+            color: $color-rojo;
+            padding-left: 10px;
+        }
     }
     #ub__main__map {
-        background-color: #70c3be;
+        background-color: $color-rojo;
         letter-spacing: 2px;
     }
     #ub__main__map a {

@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60rem;
-    color: white;
+    color: $color-blanco;
 }
 
 .main__tittle:hover {
@@ -29,7 +29,7 @@
 @media screen and (max-width: 689px) {
     .main__tittle {
         background-image: none;
-        color: #fc7f7f;
+        color: $color-rojo;
     }
 }
 
@@ -52,7 +52,7 @@
     }
 
     .cr_bt {
-        color: rgb(249, 124, 124);
+        color: $color-rojo;
         font-weight: bold;
     }
 }
@@ -64,8 +64,8 @@
     margin: 3rem;
     background-color: #00e6f6;
     border-radius: 40px;
-    background: rgb(99, 255, 245);
-    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 46%, rgb(210, 244, 249));
+    background: rgb(252,82,82);
+    background: linear-gradient(315deg, rgba(252,82,82,1) 21%, rgba(194,143,255,1));
     text-transform: uppercase;
     color: rgb(0, 0, 0);
 
@@ -88,6 +88,7 @@
         flex-wrap: wrap;
         margin: 1rem 1rem 4rem 1rem;
         text-align: center;
+        transition: box-shadow 0.3s ease;
     
         img {
             width: 18rem;
@@ -99,14 +100,14 @@
         }
     
         h5 {
-            color: rgb(255, 255, 255);
-            background-color: #f74848;
+            color: $color-blanco;
+            background-color: $color-rojo;
             border-radius: 30px;
             padding: 1rem;
         }
     
         li {
-            color: rgb(255, 255, 255);
+            color: $color-blanco;
             background-color: rgb(238, 142, 39);
             border-radius: 30px;
             margin: 1rem;
@@ -115,7 +116,7 @@
         a {
             color: #ffffff;
             text-decoration: none;
-            background-color: #f74848;
+            background-color: $color-rojo;
             border-radius: 30px;
             padding: 1rem;
             margin: 1rem;
@@ -125,6 +126,11 @@
             margin: 1rem;
         }
     }
+    
+}
+.card_section:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -146,7 +152,7 @@
     background-size: 50rem;
 
     p {
-        color: white;
+        color: $color-blanco;
         font-weight: bold;
     }
 
@@ -169,12 +175,12 @@
 
 @media screen and (max-width: 689px) {
     .flexcontainer__aside p {
-        color: #f74848;
+        color: $color-rojo;
     }
 }
 
 @media screen and (max-width: 689px) {
     .flexcontainer__aside p:hover {
-        background-color: rgb(251, 186, 186);
+        background-color: $color-rojo;
     }
 }

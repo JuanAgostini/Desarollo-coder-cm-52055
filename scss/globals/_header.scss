@@ -1,13 +1,13 @@
 .bg-nav {
-    background: rgb(99, 255, 245);
-    background: linear-gradient(90deg, rgba(99, 255, 245, 1) 0%, rgba(128, 190, 251, 1) 45%, rgb(210, 244, 249));
-
+    background: rgb(252,82,82);
+    background: linear-gradient(315deg, rgba(252,82,82,1) 21%, rgba(194,143,255,1));
+    
     .img-logo {
         width: 6rem;
     }
 
     .li-edit:hover {
-        color: rgb(246, 45, 45);
+        color: $color-blanco;
     }
 
     .dw-colors {
@@ -16,10 +16,10 @@
     }
 
     .dw-colors:hover {
-        background-color: rgba(249, 3, 3, 0.4);
+        background-color: $color-blanco;
     }
 
     .sb-edit:focus {
-        border: 2px solid rgba(249, 3, 3, 0.3);
+        border: 2px solid $color-blanco;
     }
 }

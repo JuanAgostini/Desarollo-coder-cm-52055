@@ -80,7 +80,6 @@
     justify-content: center;
     .figure__video {
         display: inline-flex;
-        // width: 100%;
         margin: 1rem;
         justify-content: center;
         .figure__video__edit {
@@ -111,10 +110,12 @@
     
     }
 }
+
 .figure__video {
     display: inline-flex;
     margin: 1rem;
     justify-content: center;
+    transition: box-shadow 0.3s ease;
     .figure__video__edit {
         width: 50rem;
         margin: 1rem;
@@ -141,6 +142,9 @@
         }
     }
 
+}
+.figure__video:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 

@@ -19,37 +19,41 @@ html {
 }
 
 .bg-nav {
-  background: rgb(99, 255, 245);
-  background: linear-gradient(90deg, rgb(99, 255, 245) 0%, rgb(128, 190, 251) 45%, rgb(210, 244, 249));
+  background: rgb(252, 82, 82);
+  background: linear-gradient(315deg, rgb(252, 82, 82) 21%, rgb(194, 143, 255));
 }
 .bg-nav .img-logo {
   width: 6rem;
 }
 .bg-nav .li-edit:hover {
-  color: rgb(246, 45, 45);
+  color: #ffffff;
 }
 .bg-nav .dw-colors {
   background-color: rgb(255, 90, 90);
   text-decoration: underline;
 }
 .bg-nav .dw-colors:hover {
-  background-color: rgba(249, 3, 3, 0.4);
+  background-color: #ffffff;
 }
 .bg-nav .sb-edit:focus {
-  border: 2px solid rgba(249, 3, 3, 0.3);
+  border: 2px solid #ffffff;
 }
 
 .ft-bg {
-  background: rgb(99, 255, 245);
-  background: linear-gradient(90deg, rgb(99, 255, 245) 0%, rgb(128, 190, 251) 46%, rgb(255, 255, 255));
+  background: rgb(252, 82, 82);
+  background: linear-gradient(315deg, rgb(252, 82, 82) 21%, rgb(194, 143, 255));
 }
 .ft-bg .ft__a {
   text-decoration: none;
   font-size: 1rem;
   color: black;
+  font-weight: bold;
+}
+.ft-bg .bounce-edit {
+  padding-right: 10px;
 }
 .ft-bg .ft__a:hover {
-  color: rgb(249, 81, 81);
+  color: #ffffff;
 }
 .ft-bg .ft__p {
   font-size: 1rem;
@@ -67,7 +71,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60rem;
-  color: white;
+  color: #ffffff;
 }
 
 .main__tittle:hover {
@@ -83,7 +87,7 @@ html {
 @media screen and (max-width: 689px) {
   .main__tittle {
     background-image: none;
-    color: #fc7f7f;
+    color: #f96d6d;
   }
 }
 .carrousel__set {
@@ -103,7 +107,7 @@ html {
   height: 65vh;
 }
 .slide .cr_bt {
-  color: rgb(249, 124, 124);
+  color: #f96d6d;
   font-weight: bold;
 }
 
@@ -114,8 +118,8 @@ html {
   margin: 3rem;
   background-color: #00e6f6;
   border-radius: 40px;
-  background: rgb(99, 255, 245);
-  background: linear-gradient(90deg, rgb(99, 255, 245) 0%, rgb(128, 190, 251) 46%, rgb(210, 244, 249));
+  background: rgb(252, 82, 82);
+  background: linear-gradient(315deg, rgb(252, 82, 82) 21%, rgb(194, 143, 255));
   text-transform: uppercase;
   color: rgb(0, 0, 0);
 }
@@ -138,6 +142,7 @@ html {
   flex-wrap: wrap;
   margin: 1rem 1rem 4rem 1rem;
   text-align: center;
+  transition: box-shadow 0.3s ease;
 }
 .section__list .card_section img {
   width: 18rem;
@@ -147,13 +152,13 @@ html {
   transform: scale(1.1);
 }
 .section__list .card_section h5 {
-  color: rgb(255, 255, 255);
-  background-color: #f74848;
+  color: #ffffff;
+  background-color: #f96d6d;
   border-radius: 30px;
   padding: 1rem;
 }
 .section__list .card_section li {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   background-color: rgb(238, 142, 39);
   border-radius: 30px;
   margin: 1rem;
@@ -161,13 +166,17 @@ html {
 .section__list .card_section a {
   color: #ffffff;
   text-decoration: none;
-  background-color: #f74848;
+  background-color: #f96d6d;
   border-radius: 30px;
   padding: 1rem;
   margin: 1rem;
 }
 .section__list .card_section .card-body {
   margin: 1rem;
+}
+
+.card_section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .flexcontainer__aside {
@@ -183,7 +192,7 @@ html {
   background-size: 50rem;
 }
 .flexcontainer__aside p {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
 }
 .flexcontainer__aside .if-edit {
@@ -202,12 +211,12 @@ html {
 }
 @media screen and (max-width: 689px) {
   .flexcontainer__aside p {
-    color: #f74848;
+    color: #f96d6d;
   }
 }
 @media screen and (max-width: 689px) {
   .flexcontainer__aside p:hover {
-    background-color: rgb(251, 186, 186);
+    background-color: #f96d6d;
   }
 }
 .main__contactimg__container {
@@ -234,7 +243,7 @@ html {
   background-position: center;
 }
 .container__edit h2 {
-  color: #fc7f7f;
+  color: #f96d6d;
   text-transform: uppercase;
 }
 
@@ -243,14 +252,14 @@ h2 {
 }
 
 form .form-label {
-  color: #fc7f7f;
+  color: #f96d6d;
 }
 form .form-control {
-  border: 1px solid #fc7f7f;
-  color: #fc7f7f;
+  border: 1px solid #f96d6d;
+  color: #f96d6d;
 }
 form .btn-primary {
-  background-color: #fc7f7f;
+  background-color: #f96d6d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -259,7 +268,7 @@ form .btn-primary {
   transition: background-color 0.3s ease;
 }
 form .btn-primary:hover {
-  background-color: #fb4d4d;
+  background-color: #f73c3c;
 }
 
 .main__h1 {
@@ -490,6 +499,7 @@ form .btn-primary:hover {
   display: inline-flex;
   margin: 1rem;
   justify-content: center;
+  transition: box-shadow 0.3s ease;
 }
 .figure__video .figure__video__edit {
   width: 50rem;
@@ -514,6 +524,10 @@ form .btn-primary:hover {
   .figure__video .figure__video__edit {
     width: 13rem;
   }
+}
+
+.figure__video:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .figure__p {
@@ -579,8 +593,12 @@ form .btn-primary:hover {
   color: rgb(249, 81, 81);
   margin-bottom: 30px;
 }
+.ub__main .ub__main__h2 .ubi_icon {
+  color: #f96d6d;
+  padding-left: 10px;
+}
 .ub__main #ub__main__map {
-  background-color: #70c3be;
+  background-color: #f96d6d;
   letter-spacing: 2px;
 }
 .ub__main #ub__main__map a {
