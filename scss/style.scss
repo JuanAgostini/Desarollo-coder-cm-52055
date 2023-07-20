@@ -11,8 +11,10 @@
 
 @import "./globals/reset";
 
-//import views
+@import "./globals/header";
+@import "./globals/footer";
 
+//import views
 @import "./views/home";
 @import "./views/contacto";
 @import "./views/politicadedevolucion";

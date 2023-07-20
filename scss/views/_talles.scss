@@ -1,0 +1,196 @@
+#main__ts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    .main_alert {
+        display: flex;
+        justify-content: center;
+        margin: 0 15px 0 15px;
+        height: 2.5rem;
+        font-family: 'Ysabeau SC', sans-serif;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 40px;
+        background: rgb(255, 35, 35);
+        background: linear-gradient(90deg, rgba(255, 35, 35, 1) 0%, rgba(239, 162, 252, 1) 100%);
+    }
+}
+
+.main__div {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    .main__div__img{
+        width: 70rem;
+    }
+    .main__div__img:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.05);
+    
+    }
+    @media screen and (max-width: 1200px){
+        .main__div__img{
+            width: 50rem;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .main__div__img{
+            width: 50rem;
+        }
+    }
+    
+    @media screen and (max-width: 992px){
+        .main__div__img{
+            width: 40rem;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .main__div__img{
+            width: 30rem;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .main__div__img{
+            width: 20rem;
+        }
+    }
+    @media screen and (max-width: 356px){
+        .main__div__img{
+            width: 15rem;
+        }
+    }
+    
+}
+
+
+
+.section__talles{
+    margin-bottom: 3rem;
+    .st_tb {
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Ysabeau SC', sans-serif;
+    }
+}
+
+.container__figure__video{
+    display: flex;
+    justify-content: center;
+    .figure__video {
+        display: inline-flex;
+        // width: 100%;
+        margin: 1rem;
+        justify-content: center;
+        .figure__video__edit {
+            width: 50rem;
+            margin: 1rem;
+        }
+        @media screen and (max-width: 1200px) {
+            .figure__video__edit {
+                width: 25rem;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .figure__video__edit {
+                width: 23rem;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .figure__video__edit {
+                width: 18rem;
+            }
+        }
+        @media screen and (max-width: 356px) {
+            .figure__video__edit {
+                width: 13rem;
+            }
+        }
+    
+    }
+}
+.figure__video {
+    display: inline-flex;
+    margin: 1rem;
+    justify-content: center;
+    .figure__video__edit {
+        width: 50rem;
+        margin: 1rem;
+    }
+    @media screen and (max-width: 1200px) {
+        .figure__video__edit {
+            width: 25rem;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .figure__video__edit {
+            width: 23rem;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .figure__video__edit {
+            width: 18rem;
+        }
+    }
+    @media screen and (max-width: 356px) {
+        .figure__video__edit {
+            width: 13rem;
+        }
+    }
+
+}
+
+
+
+.figure__p {
+    border: none;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: #000000;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.figure__p:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+.figure__p:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 35px;
+    transition: 1s;
+}
+.figure__p:hover::before {
+    filter: blur(20px);
+}
+.figure__p:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.fg__mg{
+    margin: 5rem 1rem 5rem 1rem
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
