@@ -1,9 +1,18 @@
 .bg-nav {
-    background: rgb(252,82,82);
-    background: linear-gradient(315deg, rgba(252,82,82,1) 21%, rgba(194,143,255,1));
-    
+    background: rgb(252, 82, 82);
+    background: linear-gradient(315deg, rgba(252, 82, 82, 1) 21%, $color-violeta);
+
     .img-logo {
         width: 6rem;
+        transition: transform 0.3s ease;
+    }
+
+    .img-logo:hover {
+        transform: rotate(10deg);
+    }
+
+    .li-edit {
+        font-weight: 500;
     }
 
     .li-edit:hover {

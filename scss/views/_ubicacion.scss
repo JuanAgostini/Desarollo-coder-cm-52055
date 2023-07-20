@@ -1,5 +1,6 @@
 .ub__main {
     margin: 50px 30px 50px 30px;
+
     .ub__main__h2 {
         display: flex;
         flex-direction: column;
@@ -7,15 +8,18 @@
         text-transform: uppercase;
         color: rgb(249, 81, 81);
         margin-bottom: 30px;
-        .ubi_icon{
+
+        .ubi_icon {
             color: $color-rojo;
             padding-left: 10px;
         }
     }
+
     #ub__main__map {
         background-color: $color-rojo;
         letter-spacing: 2px;
     }
+
     #ub__main__map a {
         color: #fff;
         text-decoration: none;

@@ -1,6 +1,6 @@
 .ft-bg {
-    background: rgb(252,82,82);
-    background: linear-gradient(315deg, rgba(252,82,82,1) 21%, rgba(194,143,255,1));
+    background: rgb(252, 82, 82);
+    background: linear-gradient(315deg, rgba(252, 82, 82, 1) 21%, rgba(194, 143, 255, 1));
 
     .ft__a {
         text-decoration: none;
@@ -8,9 +8,11 @@
         color: black;
         font-weight: bold;
     }
-    .bounce-edit{
+
+    .bounce-edit {
         padding-right: 10px;
     }
+
     .ft__a:hover {
         color: $color-blanco;
     }

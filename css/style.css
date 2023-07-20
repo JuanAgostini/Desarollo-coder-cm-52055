@@ -24,6 +24,13 @@ html {
 }
 .bg-nav .img-logo {
   width: 6rem;
+  transition: transform 0.3s ease;
+}
+.bg-nav .img-logo:hover {
+  transform: rotate(10deg);
+}
+.bg-nav .li-edit {
+  font-weight: 500;
 }
 .bg-nav .li-edit:hover {
   color: #ffffff;

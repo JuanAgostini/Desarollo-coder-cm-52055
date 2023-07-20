@@ -8,6 +8,7 @@
     <title>Politica de devolución</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +18,7 @@
     <header id="anchor" class="header">
         <nav class="navbar navbar-expand-lg nav-underline bg-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="img-logo" src="../img/logomarca.png"
+                <a class="navbar-brand" href="../index.html"><img class="img-logo" src="../img/logomarca.png"
                         alt="logo marca"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -66,6 +67,7 @@
     </header>
     <!-- HEADER END -->
 
+    <!-- MAIN START -->
 
     <main class="main">
         <div class="main__h1">
@@ -116,7 +118,8 @@
         <div class="pdd__section_div">
             <p><i class="fa-solid fa-envelopes-bulk fa-flip pdd-icon"></i>Para iniciar una devolución envíanos un mail a
                 <b>estampados.shinobi@gmail.com</b> con el tema “ Devolución/cambio”
-                Para poder facilitar la devolución/Cambio.</p>
+                Para poder facilitar la devolución/Cambio.
+            </p>
         </div>
         <div class="pdd__section_div">
             <p><i class="fa-solid fa-heart fa-beat pdd-icon"></i>Muchas gracias por tu tiempo.
@@ -124,10 +127,14 @@
         </div>
     </section>
     <!-- FIN DE MAIN -->
-    <figure class="pdd__figure">
+
+    <!-- FIGURE START -->
+    <figure class="pdd__figure" data-aos="fade-left">
         <img class="pdd__figure__img" src="../img/banner shinobi.png" alt="banner de la pagina">
     </figure>
     </div>
+
+    <!-- FIGURE END -->
 
     <!-- FOOTER START -->
     <footer class="text-dark pt-5 pb-4 ft-bg">
@@ -205,7 +212,10 @@
     <!-- FOOTER END -->
 
     <!-- SCRIPTS -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
