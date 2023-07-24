@@ -206,6 +206,7 @@ body {
   color: black;
   border-radius: 30px;
   padding: 1rem;
+  cursor: default;
 }
 .section__list .card_section li {
   color: #ffffff;
@@ -358,7 +359,7 @@ body {
   justify-content: center;
 }
 .main__contactimg__container img {
-  width: 30rem;
+  width: 20rem;
   margin-top: 1.5rem;
 }
 
