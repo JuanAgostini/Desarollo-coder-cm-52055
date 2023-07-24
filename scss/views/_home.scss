@@ -29,6 +29,12 @@
     .main__tittle {
         background-image: none;
         color: $color-rojo;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        h1 {
+            font-size: 0.9rem;
+            text-align: center;
+        }
     }
 }
 
@@ -42,11 +48,13 @@
         width: 65%;
         margin: 3rem;
     }
-    .carrousel-caption{
+
+    .carrousel-caption {
         top: 0;
         bottom: auto;
     }
-    .carousel__img__p{
+
+    .carousel__img__p {
         color: $color-amarillo;
         font-weight: bold;
     }
@@ -78,7 +86,22 @@
     color: rgb(0, 0, 0);
 
     .subtittle__h2 {
+        display: flex;
         margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .subtittle__h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .subtittle__h2 {
+        font-size: 0.6rem;
     }
 }
 
@@ -86,6 +109,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 1rem;
 
     .border__del {
         border: none;
@@ -102,6 +126,12 @@
 
         img {
             width: 18rem;
+            padding-top: 1.5rem;
+        }
+
+        .border__del {
+            display: flex;
+            align-items: center;
         }
 
         img:hover {
@@ -140,6 +170,7 @@
 .card_section:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .btn {
     --color: rgba(194, 143, 255, 1);
     --color2: rgb(10, 25, 30);
@@ -157,9 +188,10 @@
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
-   }
-   
-   .btn::after, .btn::before {
+}
+
+.btn::after,
+.btn::before {
     content: '';
     display: block;
     height: 100%;
@@ -171,30 +203,30 @@
     z-index: -1;
     transition: .5s ease-out;
     background-color: var(--color);
-   }
-   
-   .btn::before {
+}
+
+.btn::before {
     top: -50%;
     left: -25%;
     transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::before {
+}
+
+.btn:hover::before {
     transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::after {
+}
+
+.btn:hover::after {
     transform: skew(45deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover {
+}
+
+.btn:hover {
     color: var(--color2);
-   }
-   
-   .btn:active {
+}
+
+.btn:active {
     filter: brightness(.7);
     transform: scale(.98);
-   }
+}
 
 
 
@@ -203,25 +235,28 @@
 
 
 .aside__flexcontainer {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     background-color: $color-blanco;
     overflow: auto;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    .info-slide{
+
+    .info-slide {
         padding: 2.1rem;
         position: relative;
         text-align: center;
     }
-    .img-container{
+
+    .img-container {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .flexcontainer__aside {
-        background-size: 50rem;
+    .aside__flexcontainer {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -242,14 +277,33 @@
         background-color: $color-rojo;
     }
 }
-.aside__logo{
+
+.aside__logo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: 'Ysabeau SC', sans-serif;
     font-weight: bold;
-    .aside__img{
+
+    .aside__img {
         width: 10rem;
     }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 3rem;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: auto;
+}
+
+.fa-edit {
+    color: rgb(45, 245, 0);
 }
