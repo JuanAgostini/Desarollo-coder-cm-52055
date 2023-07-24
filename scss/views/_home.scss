@@ -171,7 +171,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.btn {
+.btn1 {
     --color: rgba(194, 143, 255, 1);
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
@@ -190,8 +190,8 @@
     color: var(--color);
 }
 
-.btn::after,
-.btn::before {
+.btn1::after,
+.btn1::before {
     content: '';
     display: block;
     height: 100%;
@@ -205,25 +205,25 @@
     background-color: var(--color);
 }
 
-.btn::before {
+.btn1::before {
     top: -50%;
     left: -25%;
     transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
 }
 
-.btn:hover::before {
+.btn1:hover::before {
     transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
 }
 
-.btn:hover::after {
+.btn1:hover::after {
     transform: skew(45deg) translate(-50%, -50%);
 }
 
-.btn:hover {
+.btn1:hover {
     color: var(--color2);
 }
 
-.btn:active {
+.btn1:active {
     filter: brightness(.7);
     transform: scale(.98);
 }
