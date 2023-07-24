@@ -1,6 +1,6 @@
 .bg-nav {
-    background: rgb(252, 82, 82);
-    background: linear-gradient(315deg, rgba(252, 82, 82, 1) 21%, $color-violeta);
+@include GradientBackground();
+}
 
     .img-logo {
         width: 6rem;
@@ -31,4 +31,3 @@
     .sb-edit:focus {
         border: 2px solid $color-blanco;
     }
-}

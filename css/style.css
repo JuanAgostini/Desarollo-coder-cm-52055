@@ -18,31 +18,42 @@ html {
   font-family: "Geologica", sans-serif;
 }
 
+body {
+  background-color: #e6e6e6;
+}
+
 .bg-nav {
   background: rgb(252, 82, 82);
   background: linear-gradient(315deg, rgb(252, 82, 82) 21%, rgb(194, 143, 255));
 }
-.bg-nav .img-logo {
+
+.img-logo {
   width: 6rem;
   transition: transform 0.3s ease;
 }
-.bg-nav .img-logo:hover {
+
+.img-logo:hover {
   transform: rotate(10deg);
 }
-.bg-nav .li-edit {
+
+.li-edit {
   font-weight: 500;
 }
-.bg-nav .li-edit:hover {
+
+.li-edit:hover {
   color: #ffffff;
 }
-.bg-nav .dw-colors {
+
+.dw-colors {
   background-color: rgb(255, 90, 90);
   text-decoration: underline;
 }
-.bg-nav .dw-colors:hover {
+
+.dw-colors:hover {
   background-color: #ffffff;
 }
-.bg-nav .sb-edit:focus {
+
+.sb-edit:focus {
   border: 2px solid #ffffff;
 }
 
@@ -101,10 +112,19 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .carrousel__set .carrousel__size {
-  width: 80%;
+  width: 65%;
   margin: 3rem;
+}
+.carrousel__set .carrousel-caption {
+  top: 0;
+  bottom: auto;
+}
+.carrousel__set .carousel__img__p {
+  color: #ffdf92;
+  font-weight: bold;
 }
 
 .slide {
@@ -159,21 +179,20 @@ html {
   transform: scale(1.1);
 }
 .section__list .card_section h5 {
-  color: #ffffff;
-  background-color: #f96d6d;
+  color: black;
   border-radius: 30px;
   padding: 1rem;
 }
 .section__list .card_section li {
   color: #ffffff;
-  background-color: rgb(238, 142, 39);
+  background: rgb(252, 82, 82);
+  background: linear-gradient(315deg, rgb(252, 82, 82) 21%, rgb(194, 143, 255));
   border-radius: 30px;
   margin: 1rem;
 }
 .section__list .card_section a {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
-  background-color: #f96d6d;
   border-radius: 30px;
   padding: 1rem;
   margin: 1rem;
@@ -186,24 +205,77 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.flexcontainer__aside {
+.btn {
+  --color: rgba(194, 143, 255, 1);
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after, .btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.aside__flexcontainer {
   display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  overflow: auto;
   align-items: center;
-  margin: 4rem 8rem 8rem 8rem;
-  flex-direction: column;
-  gap: 40px;
-  font-size: 1.3rem;
-  background-image: url("../img/banner shinobi.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.flexcontainer__aside p {
-  color: #ffffff;
-  font-weight: bold;
+.aside__flexcontainer .info-slide {
+  padding: 2.1rem;
+  position: relative;
+  text-align: center;
 }
-.flexcontainer__aside .if-edit {
-  padding: 1rem;
+.aside__flexcontainer .img-container {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -226,6 +298,18 @@ html {
     background-color: #f96d6d;
   }
 }
+.aside__logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ysabeau SC", sans-serif;
+  font-weight: bold;
+}
+.aside__logo .aside__img {
+  width: 10rem;
+}
+
 .main__contactimg__container {
   display: flex;
   justify-content: center;
