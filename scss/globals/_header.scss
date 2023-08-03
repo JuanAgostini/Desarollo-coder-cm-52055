@@ -14,7 +14,10 @@
     .li-edit {
         font-weight: 500;
     }
-
+    .li-edit:active{
+        text-decoration: underline;
+        color: black;
+    }
     .li-edit:hover {
         color: $color-blanco;
     }

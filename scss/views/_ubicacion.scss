@@ -1,6 +1,7 @@
 .ub__main {
     margin: 50px 30px 50px 30px;
 
+
     .ub__main__h2 {
         display: flex;
         flex-direction: column;
@@ -8,6 +9,14 @@
         text-transform: uppercase;
         color: rgb(249, 81, 81);
         margin-bottom: 30px;
+        margin-top: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        h2 {
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
 
         .ubi_icon {
             color: $color-rojo;
@@ -70,5 +79,22 @@
     #ub__main__map .maps iframe {
         width: 100%;
         height: 700px;
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 3rem;
+
+    .whatsapp-float img {
+        width: 60px;
+        height: auto;
+    }
+
+    .fa-edit {
+        color: rgb(45, 245, 0);
     }
 }

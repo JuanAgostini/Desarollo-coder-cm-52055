@@ -289,22 +289,35 @@
 
     .aside__img {
         width: 10rem;
+        transition: transform 1s ease;
+        animation: flip 4s linear infinite;
+        transform-style: preserve-3d;
     }
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    font-size: 3rem;
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
-.whatsapp-float img {
-    width: 60px;
-    height: auto;
-}
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        font-size: 3rem;
+    }
 
-.fa-edit {
-    color: rgb(45, 245, 0);
-}
+    .whatsapp-float img {
+        width: 60px;
+        height: auto;
+    }
+
+    .fa-edit {
+        color: rgb(45, 245, 0);
+    }

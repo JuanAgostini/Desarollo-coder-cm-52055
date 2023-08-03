@@ -1,0 +1,31 @@
+.img__404__container {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+
+    .img__404__size {
+        width: 40rem;
+    }
+}
+
+
+.a__404__container {
+    display: flex;
+    justify-content: center;
+
+    .a__404__edit {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        padding: 1rem;
+
+    }
+}
+
+.a__404__edit:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+}

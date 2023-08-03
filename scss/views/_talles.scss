@@ -76,6 +76,8 @@
 
 .section__talles {
     margin-bottom: 3rem;
+    margin-top: 3rem;
+
 
     .st_tb {
         text-align: center;
@@ -84,40 +86,41 @@
     }
 }
 
-.container__figure__video {
+.container__figure__img {
     display: flex;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
-    .figure__video {
+    .figure__img {
         display: inline-flex;
         margin: 1rem;
         justify-content: center;
 
-        .figure__video__edit {
+        .figure__img__edit {
             width: 50rem;
             margin: 1rem;
         }
 
         @media screen and (max-width: 1200px) {
-            .figure__video__edit {
+            .figure__img__edit {
                 width: 25rem;
             }
         }
 
         @media screen and (max-width: 992px) {
-            .figure__video__edit {
+            .figure__img__edit {
                 width: 23rem;
             }
         }
 
         @media screen and (max-width: 576px) {
-            .figure__video__edit {
+            .figure__img__edit {
                 width: 18rem;
             }
         }
 
         @media screen and (max-width: 356px) {
-            .figure__video__edit {
+            .figure__img__edit {
                 width: 13rem;
             }
         }
@@ -219,5 +222,22 @@
 
     100% {
         background-position: 400%;
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 3rem;
+
+    .whatsapp-float img {
+        width: 60px;
+        height: auto;
+    }
+
+    .fa-edit {
+        color: rgb(45, 245, 0);
     }
 }
