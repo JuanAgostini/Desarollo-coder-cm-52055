@@ -27,8 +27,21 @@
 
 @media screen and (max-width: 689px) {
     .main__tittle {
+        background-size: 30rem;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .main__tittle {
         background-image: none;
-        color: $color-rojo;
+        @include GradientBackground();
+        color: $color-blanco;
+        border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
         h1 {
@@ -125,7 +138,7 @@
         transition: box-shadow 0.3s ease;
 
         img {
-            width: 18rem;
+            width: 17rem;
             padding-top: 1.5rem;
         }
 
@@ -144,6 +157,7 @@
             border-radius: 30px;
             padding: 1rem;
             cursor: default;
+            font-weight: bold;
         }
 
         li {
@@ -173,7 +187,7 @@
 }
 
 .btn1 {
-    --color: rgba(194, 143, 255, 1);
+    --color: rgb(133, 75, 205);
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
     background-color: transparent;
@@ -189,6 +203,7 @@
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
+    font-weight: bold;
 }
 
 .btn1::after,
@@ -305,19 +320,19 @@
     }
 }
 
-    .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 9999;
-        font-size: 3rem;
-    }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 3rem;
+}
 
-    .whatsapp-float img {
-        width: 60px;
-        height: auto;
-    }
+.whatsapp-float img {
+    width: 60px;
+    height: auto;
+}
 
-    .fa-edit {
-        color: rgb(45, 245, 0);
-    }
+.fa-edit {
+    color: rgb(45, 245, 0);
+}
